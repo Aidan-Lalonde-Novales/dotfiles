@@ -57,6 +57,15 @@ cd ~
 # Remove Dotfiles
 sudo rm -R ~/dotfiles
 
+# Install Github
+sudo apt update
+sudo apt install gh -y
+gh auth login
+
+# Ensure user is clean
+echo Please take a shower immediately!
+read any_key
+
 # Restart Terminal
 echo Done! Rebooting...
 sudo reboot now
